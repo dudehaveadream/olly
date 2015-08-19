@@ -3,13 +3,8 @@
 @import "styles/base/mixins";
 @import "styles/base/variables";
 @import "styles/base/base";
-
-/* Components */
+@import "styles/base/icons";
 
 /* Layout related stylesheets* */
-// @import "styles/layout/header";
-// @import "styles/layout/footer";
-
-/* Pages */
-
-
+@import "styles/topnav";
+@import "styles/header";

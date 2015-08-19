@@ -1,19 +1,65 @@
+@font-face {
+    font-family: 'Aileron-light';
+    src: url('../fonts/Aileron-light.eot');
+    src: url('../fonts/Aileron-light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Aileron-light.woff') format('woff'),
+         url('../fonts/Aileron-light.ttf') format('truetype'),
+         url('../fonts/Aileron-light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aileron-Regular';
+    src: url('../fonts/Aileron-Regular.eot');
+    src: url('../fonts/Aileron-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Aileron-Regular.woff') format('woff'),
+         url('../fonts/Aileron-Regular.ttf') format('truetype'),
+         url('../fonts/Aileron-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aileron-SemiBold';
+    src: url('../fonts/Aileron-SemiBold.eot');
+    src: url('../fonts/Aileron-SemiBold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Aileron-SemiBold.woff') format('woff'),
+         url('../fonts/Aileron-SemiBold.ttf') format('truetype'),
+         url('../fonts/Aileron-SemiBold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aileron-Bold';
+    src: url('../fonts/Aileron-Bold.eot');
+    src: url('../fonts/Aileron-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Aileron-Bold.woff') format('woff'),
+         url('../fonts/Aileron-Bold.ttf') format('truetype'),
+         url('../fonts/Aileron-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 body {
-  font-size: 14px;
+	font-family: $light;
+  	font-size: 14px;
 }
 
 ::-webkit-input-placeholder {
-  color: #999999;
+  	color: #999999;
 }
 
 ::-moz-placeholder {
-  color: #999999;
+  	color: #999999;
 }
 
 :-moz-placeholder {
-  color: #999999;
+  	color: #999999;
 }
 
 :-ms-input-placeholder      {
-  color: #999999;
+  	color: #999999;
 }

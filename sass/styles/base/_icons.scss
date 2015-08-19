@@ -1,0 +1,24 @@
+.icon {
+	display: inline-block;
+	vertical-align: middle;
+	&.icon-top-nav {
+		width: 18px;
+		height: 19px;
+		background-image: url(../img/icons/topnav.png);
+		&.icon-light {
+			background-position: 0 0;
+		}
+		&.icon-star {
+			background-position: 0 -22px;
+		}
+		&.icon-stat {
+			background-position: 0 -41px;
+		}
+		&.icon-price {
+			background-position: 0 -60px;
+		}
+		&.icon-contacts {
+			background-position: 0 -80px;
+		}
+	}
+}

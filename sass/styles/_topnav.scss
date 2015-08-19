@@ -1,0 +1,36 @@
+.top-nav {
+	height: 53px;
+	background-image: url(../img/bg/topnav.jpg);
+	background-size: cover;
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 0;
+		border-bottom: 1px dashed rgba(255,255,255,.5);
+	}
+	&-list {
+		height: 53px;
+		padding-top: 18px;
+		text-align: right;
+		li {
+			display: inline-block;
+			margin-right: 30px;
+			a {
+				font-size: 18px;
+				color: $white;
+				text-decoration: none;
+				&:hover {
+					opacity: .7;
+				}
+				.icon {
+					margin-right: 5px;
+					margin-top: -3px;
+				}
+			}
+		}
+	}
+}

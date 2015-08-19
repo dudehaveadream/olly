@@ -1,0 +1,17 @@
+.header {
+	height: 900px;
+	background-image: url(../img/bg/header.jpg);
+	background-size: cover;
+	background-position: bottom center;
+	padding-top: 20px;
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 5px;
+		width: 100%;
+		height: 0;
+		border-bottom: 1px dashed rgba(255,255,255,.5);
+	}
+}
