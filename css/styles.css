@@ -58,9 +58,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /*Mixins*/
 @font-face {
-  font-family: 'Aileron-light';
-  src: url("../fonts/Aileron-light.eot");
-  src: url("../fonts/Aileron-light.eot?#iefix") format("embedded-opentype"), url("../fonts/Aileron-light.woff") format("woff"), url("../fonts/Aileron-light.ttf") format("truetype"), url("../fonts/Aileron-light.otf") format("opentype");
+  font-family: 'Aileron-Light';
+  src: url("../fonts/Aileron-Light.eot");
+  src: url("../fonts/Aileron-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Aileron-Light.woff") format("woff"), url("../fonts/Aileron-Light.ttf") format("truetype"), url("../fonts/Aileron-Light.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -502,13 +502,227 @@ h2 {
   background-repeat: repeat-y;
   background-position: top center;
 }
+.how-it-works-text .pointer {
+  position: absolute;
+}
+.how-it-works-text p {
+  font-size: 25px;
+  color: #2e2e2e;
+}
+.how-it-works-text p.text-footer {
+  font-size: 19px;
+  color: #545454;
+  border-top: 1px solid #d4d4d4;
+  margin-top: 15px;
+  padding-top: 15px;
+}
+.how-it-works-image img {
+  max-width: 100%;
+}
+.how-it-works-steps {
+  position: relative;
+  margin-top: 70px;
+}
 .how-it-works-steps:after {
   content: "";
   display: table;
   clear: both;
 }
-.how-it-works-image img {
-  max-width: 100%;
+.how-it-works-steps .btn-light-green {
+  padding: 8px;
+  margin-top: 15px;
+  font-family: "Aileron-Semibold";
+  font-size: 25px;
+  -webkit-box-shadow: inset 0 -4px 0 #23905e;
+  -moz-box-shadow: inset 0 -4px 0 #23905e;
+  box-shadow: inset 0 -4px 0 #23905e;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+}
+.how-it-works-steps.steps-left {
+  text-align: left;
+}
+.how-it-works-steps.steps-left .how-it-works-image {
+  text-align: right;
+}
+.how-it-works-steps .steps-right-text {
+  float: right;
+}
+.how-it-works-steps.steps-right {
+  text-align: right;
+}
+.how-it-works-steps.steps-right .how-it-works-text {
+  margin-left: auto;
+}
+.how-it-works-steps.steps-right .how-it-works-image {
+  text-align: left;
+}
+.how-it-works-steps.step1 .how-it-works-text {
+  width: 420px;
+  padding-top: 175px;
+}
+.how-it-works-steps.step1 .how-it-works-text .pointer {
+  top: 0;
+  right: -20px;
+}
+.how-it-works-steps.step2 .how-it-works-text {
+  width: 400px;
+  padding-top: 120px;
+}
+.how-it-works-steps.step2 .how-it-works-text .pointer {
+  top: 170px;
+  left: -40px;
+}
+.how-it-works-steps.step3 .how-it-works-text {
+  width: 320px;
+  padding-top: 140px;
+}
+.how-it-works-steps.step3 .how-it-works-text .pointer {
+  bottom: -80px;
+  right: -40px;
+}
+.how-it-works-steps.step4 .how-it-works-text {
+  width: 310px;
+  padding-top: 120px;
+}
+.how-it-works-steps.step4 .how-it-works-text .pointer {
+  top: 150px;
+  left: -50px;
+}
+.how-it-works-steps.step5 .how-it-works-text {
+  width: 455px;
+  padding-top: 140px;
+}
+.how-it-works-steps.step5 .how-it-works-text .pointer {
+  top: 60px;
+  right: -45px;
+}
+.how-it-works-steps.step6 .how-it-works-text {
+  width: 380px;
+  padding-top: 110px;
+}
+.how-it-works-steps.step6 .how-it-works-text .pointer {
+  top: 120px;
+  left: -50px;
+}
+.how-it-works-steps.step7 .how-it-works-text {
+  width: 455px;
+  padding-top: 140px;
+}
+.how-it-works-steps.step7 .how-it-works-text .pointer {
+  top: 80px;
+  right: -45px;
+}
+.how-it-works-steps.step8 .how-it-works-text {
+  width: 290px;
+  padding-top: 130px;
+}
+.how-it-works-steps.step8 .how-it-works-text .pointer {
+  top: 110px;
+  left: -50px;
+}
+@media only screen and (max-width: 1199px) {
+  .how-it-works-steps.step1 .how-it-works-text .pointer {
+    top: 15px;
+  }
+  .how-it-works-steps.step2 .how-it-works-text .pointer {
+    top: 180px;
+    left: -20px;
+  }
+  .how-it-works-steps.step4 .how-it-works-text .pointer {
+    left: -70px;
+  }
+  .how-it-works-steps.step5 .how-it-works-text .pointer {
+    top: 70px;
+    right: -130px;
+  }
+  .how-it-works-steps.step6 .how-it-works-text .pointer {
+    top: 50px;
+    left: -20px;
+  }
+  .how-it-works-steps.step7 .how-it-works-text .pointer {
+    right: -25px;
+  }
+  .how-it-works-steps.step8 .how-it-works-text .pointer {
+    left: -160px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .how-it-works .how-it-works-text {
+    width: 100% !important;
+  }
+  .how-it-works-steps.step1 .how-it-works-text {
+    padding-top: 100px;
+  }
+  .how-it-works-steps.step1 .how-it-works-text .pointer {
+    top: -50px;
+  }
+  .how-it-works-steps.step2 .how-it-works-text {
+    padding-top: 80px;
+  }
+  .how-it-works-steps.step2 .how-it-works-text .pointer {
+    top: 150px;
+  }
+  .how-it-works-steps.step3 .how-it-works-text {
+    padding-top: 80px;
+  }
+  .how-it-works-steps.step3 .how-it-works-text .pointer {
+    top: 100px;
+  }
+  .how-it-works-steps.step4 .how-it-works-text {
+    padding-top: 80px;
+  }
+  .how-it-works-steps.step4 .how-it-works-text .pointer {
+    top: 50px;
+    left: -200px;
+  }
+  .how-it-works-steps.step5 .how-it-works-text {
+    padding-top: 100px;
+  }
+  .how-it-works-steps.step5 .how-it-works-text .pointer {
+    top: 40px;
+  }
+  .how-it-works-steps.step6 .how-it-works-text {
+    padding-top: 80px;
+  }
+  .how-it-works-steps.step6 .how-it-works-text .pointer {
+    top: 30px;
+    left: -150px;
+  }
+  .how-it-works-steps.step7 .how-it-works-text {
+    padding-top: 90px;
+  }
+  .how-it-works-steps.step7 .how-it-works-text .pointer {
+    top: 30px;
+  }
+  .how-it-works-steps.step8 .how-it-works-text {
+    padding-top: 90px;
+    text-align: center;
+  }
+  .how-it-works-steps.step8 .how-it-works-text .pointer {
+    top: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .how-it-works-text {
+    padding: 0 !important;
+    text-align: center !important;
+    margin-bottom: 30px;
+  }
+  .how-it-works-text .pointer {
+    display: none;
+  }
+  .how-it-works-image {
+    text-align: center !important;
+  }
+  .how-it-works-steps {
+    margin-top: 40px;
+  }
+  .how-it-works-steps .steps-right-text {
+    float: none;
+  }
 }
 
 .sign-me-up {
@@ -558,7 +772,7 @@ h2 {
 }
 
 .our-benefits {
-  padding: 90px 0;
+  padding: 90px 0 0;
 }
 .our-benefits_item {
   margin-top: 65px;
