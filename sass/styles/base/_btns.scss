@@ -1,7 +1,8 @@
 .btn {
 	display: inline-block;
 	width: 100%;
-	@include transition (all, 0.3s, linear);
+	outline: none !important;
+	@include transition (all, 0.2s, linear);
 	&.btn-light-green {
 		background: #43b187;
 		color: white;

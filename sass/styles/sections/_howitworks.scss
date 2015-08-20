@@ -1,0 +1,14 @@
+.how-it-works {
+	padding: 65px 0 110px;
+	background-image: url(../img/bg/howitworks.jpg);
+	background-repeat: repeat-y;
+	background-position: top center;
+	&-steps {
+		@include clearfix;
+	}
+	&-image {
+		img {
+			max-width: 100%;
+		}
+	}
+}

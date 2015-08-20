@@ -103,6 +103,30 @@ h2 {
   text-transform: uppercase;
 }
 
+.title-holder {
+  text-align: center;
+  position: relative;
+  margin-bottom: 50px;
+}
+.title-holder p {
+  font-size: 20px;
+}
+.title-holder:before, .title-holder:after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  width: 25px;
+  height: 4px;
+}
+.title-holder:before {
+  right: 50%;
+  background: #e9bf3d;
+}
+.title-holder:after {
+  left: 50%;
+  background: #233644;
+}
+
 .form-holder {
   width: 740px;
   height: 50px;
@@ -157,6 +181,11 @@ h2 {
   right: 0;
   padding: 13px 0 10px;
 }
+@media only screen and (max-width: 991px) {
+  .form-holder {
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 767px) {
   .form-holder {
     width: 100%;
@@ -205,11 +234,12 @@ h2 {
 .btn {
   display: inline-block;
   width: 100%;
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s linear;
-  -ms-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
-  transition: all 0.3s linear;
+  outline: none !important;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 .btn.btn-light-green {
   background: #43b187;
@@ -446,6 +476,21 @@ h2 {
     float: none;
     text-align: center;
   }
+}
+
+.how-it-works {
+  padding: 65px 0 110px;
+  background-image: url(../img/bg/howitworks.jpg);
+  background-repeat: repeat-y;
+  background-position: top center;
+}
+.how-it-works-steps:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.how-it-works-image img {
+  max-width: 100%;
 }
 
 .sign-me-up {
