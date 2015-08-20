@@ -1,0 +1,20 @@
+.btn {
+	display: inline-block;
+	width: 100%;
+	@include transition (all, 0.3s, linear);
+	&.btn-light-green {
+		background: #43b187;
+		color: white;
+		@include border-radius (0);
+		&:hover {
+			background: #39a47b;
+		}
+	}
+	&.btn-dark-green {
+		background: #2f9c71;
+		@include border-radius (0);
+		&:hover {
+			background: #2d946b;
+		}
+	}
+}

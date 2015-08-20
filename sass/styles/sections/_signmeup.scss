@@ -1,0 +1,21 @@
+.sign-me-up {
+	background-image: url(../img/bg/signmeup.jpg);
+	background-size: cover;
+	padding: 110px 0 125px;
+	&-content {
+		text-align: center;
+		h2 {
+			color: $white;
+		}
+		p {
+			width: 875px;
+			margin: auto;
+			font-size: 30px;
+			color: $white;
+			margin-bottom: 25px;
+		}
+		.form-holder {
+			width: 875px;
+		}
+	}
+}

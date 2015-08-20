@@ -1,5 +1,5 @@
 .header {
-	height: 900px;
+	min-height: 900px;
 	background-image: url(../img/bg/header.jpg);
 	background-size: cover;
 	background-position: bottom center;
@@ -73,6 +73,7 @@
 		}
 		p.subtitle {
 			padding: 0 10px;
+			margin-bottom: 15px;
 			font-size: 23px;
 			color: $white;
 			line-height: 1.2;
@@ -85,7 +86,7 @@
 	&-dialog {
 		position: absolute;
 		top: 100%;
-		left: 50%;
+		right: 210px;
 		width: 340px;
 		height: 195px;
 		background-image: url(../img/bg/header_dialog.png);
@@ -95,7 +96,7 @@
 		&:after {
 			content: '';
 			position: absolute;
-			top: -40px;
+			top: -50px;
 			left: 100%;
 			width: 168px;
 			height: 154px;

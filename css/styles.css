@@ -90,20 +90,66 @@ body {
   font-size: 17px;
 }
 
-::-webkit-input-placeholder {
-  color: #999999;
+h2 {
+  font-size: 32px;
+  font-family: "Aileron-Semibold";
+  margin-bottom: 15px;
+  text-transform: uppercase;
 }
 
-::-moz-placeholder {
-  color: #999999;
+.form-holder {
+  width: 740px;
+  height: 50px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
 }
-
-:-moz-placeholder {
-  color: #999999;
+.form-holder ::-webkit-input-placeholder {
+  color: #f6cad3;
 }
-
-:-ms-input-placeholder {
-  color: #999999;
+.form-holder ::-moz-placeholder {
+  color: #f6cad3;
+}
+.form-holder :-moz-placeholder {
+  color: #f6cad3;
+}
+.form-holder :-ms-input-placeholder {
+  color: #f6cad3;
+}
+.form-holder input[type="text"] {
+  width: 100%;
+  height: 50px;
+  background: #ffffff;
+  border: none;
+  outline: none;
+  padding-left: 15px;
+  padding-right: 295px;
+  font-size: 23px;
+  text-align: center;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+.form-holder .btn {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+}
+.form-holder .btn.btn-light-green {
+  width: 230px;
+  right: 50px;
+  font-size: 19px;
+  text-transform: uppercase;
+  padding: 12px 0;
+}
+.form-holder .btn.btn-dark-green {
+  width: 50px;
+  right: 0;
+  padding: 13px 0 10px;
 }
 
 .icon {
@@ -129,6 +175,37 @@ body {
 }
 .icon.icon-top-nav.icon-contacts {
   background-position: 0 -80px;
+}
+
+.btn {
+  display: inline-block;
+  width: 100%;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.btn.btn-light-green {
+  background: #43b187;
+  color: white;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+}
+.btn.btn-light-green:hover {
+  background: #39a47b;
+}
+.btn.btn-dark-green {
+  background: #2f9c71;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+}
+.btn.btn-dark-green:hover {
+  background: #2d946b;
 }
 
 /* Layout related stylesheets* */
@@ -170,7 +247,7 @@ body {
 }
 
 .header {
-  height: 900px;
+  min-height: 900px;
   background-image: url(../img/bg/header.jpg);
   background-size: cover;
   background-position: bottom center;
@@ -251,6 +328,7 @@ body {
 }
 .header-content p.subtitle {
   padding: 0 10px;
+  margin-bottom: 15px;
   font-size: 23px;
   color: #ffffff;
   line-height: 1.2;
@@ -262,7 +340,7 @@ body {
 .header-dialog {
   position: absolute;
   top: 100%;
-  left: 50%;
+  right: 210px;
   width: 340px;
   height: 195px;
   background-image: url(../img/bg/header_dialog.png);
@@ -273,7 +351,7 @@ body {
 .header-dialog:after {
   content: '';
   position: absolute;
-  top: -40px;
+  top: -50px;
   left: 100%;
   width: 168px;
   height: 154px;
@@ -295,4 +373,26 @@ body {
 .header-dialog-inner p.value {
   font-size: 17px;
   color: #f15079;
+}
+
+.sign-me-up {
+  background-image: url(../img/bg/signmeup.jpg);
+  background-size: cover;
+  padding: 110px 0 125px;
+}
+.sign-me-up-content {
+  text-align: center;
+}
+.sign-me-up-content h2 {
+  color: #ffffff;
+}
+.sign-me-up-content p {
+  width: 875px;
+  margin: auto;
+  font-size: 30px;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+.sign-me-up-content .form-holder {
+  width: 875px;
 }
