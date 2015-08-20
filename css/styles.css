@@ -670,22 +670,49 @@ h2 {
   top: 5px;
   right: -8px;
 }
+@media only screen and (max-width: 767px) {
+  .clients-comments .carousel .carousel-inner {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
 .clients-comments .carousel .carousel-control {
   background: none;
 }
 .clients-comments .carousel .carousel-control span {
-  top: 50%;
-  left: 0;
+  top: 165px;
   position: absolute;
-  margin-top: -19px;
   width: 21px;
   height: 39px;
   background: url(../img/icons/arrows.png) no-repeat;
 }
+@media only screen and (max-width: 767px) {
+  .clients-comments .carousel .carousel-control span {
+    top: 50px;
+  }
+}
+.clients-comments .carousel .carousel-control.left {
+  margin-left: -21px;
+}
+@media only screen and (max-width: 767px) {
+  .clients-comments .carousel .carousel-control.left {
+    margin-left: 0;
+  }
+}
+.clients-comments .carousel .carousel-control.left span {
+  left: 0;
+}
+.clients-comments .carousel .carousel-control.right {
+  margin-right: -21px;
+}
+@media only screen and (max-width: 767px) {
+  .clients-comments .carousel .carousel-control.right {
+    margin-right: 0;
+  }
+}
 .clients-comments .carousel .carousel-control.right span {
   background-position: -21px 0;
   right: 0;
-  left: auto;
 }
 .clients-comments .carousel .client-quote {
   font-size: 30px;
@@ -694,4 +721,43 @@ h2 {
   width: 660px;
   margin: 0 auto;
   margin-top: 20px;
+}
+@media only screen and (max-width: 767px) {
+  .clients-comments .carousel .client-quote {
+    width: auto;
+    font-size: 24px;
+    margin-top: 15px;
+  }
+}
+.clients-comments .carousel .client-socials {
+  text-align: center;
+  margin-top: 10px;
+}
+.clients-comments .carousel .client-socials .social-link {
+  text-decoration: none;
+  opacity: .65;
+  display: inline-block;
+  -webkit-transition: opacity 0.2s linear;
+  -moz-transition: opacity 0.2s linear;
+  -ms-transition: opacity 0.2s linear;
+  -o-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+}
+.clients-comments .carousel .client-socials .social-link:hover {
+  opacity: 1;
+}
+.clients-comments .carousel .client-socials .social-icon {
+  display: block;
+}
+.clients-comments .carousel .client-name {
+  font-size: 25px;
+  color: #279c6f;
+  text-align: center;
+  margin-top: 10px;
+}
+.clients-comments .carousel .company-name {
+  font-size: 20px;
+  color: #5e5e5e;
+  font-family: "Aileron-Light";
+  margin-top: 8px;
 }

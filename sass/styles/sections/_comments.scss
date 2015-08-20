@@ -23,25 +23,50 @@
       }
     }
 
+    @media #{$mobile} {
+      .carousel-inner {
+        width: 95%;
+        margin: 0 auto;
+      }
+    }
+
     .carousel-control {
       background: none;
 
       span {
-        top: 50%;
-        left: 0;
+        top: 165px;
         position: absolute;
-        margin-top: -19px;
         width: 21px;
         height: 39px;
         background: url(../img/icons/arrows.png) no-repeat;
+
+        @media #{$mobile} {
+          top: 50px;
+        }
+      }
+
+      &.left {
+        margin-left: -21px;
+
+        @media #{$mobile} {
+          margin-left: 0;
+        }
+
+        span {
+          left: 0;
+        }
       }
 
       &.right {
+        margin-right: -21px;
+
+        @media #{$mobile} {
+          margin-right: 0;
+        }
 
         span {
           background-position: -21px 0;
           right: 0;
-          left: auto;
         }
       }
     }
@@ -53,6 +78,46 @@
       width: 660px;
       margin: 0 auto;
       margin-top: 20px;
+
+      @media #{$mobile} {
+        width: auto;
+        font-size: 24px;
+        margin-top: 15px;
+      }
+    }
+
+    .client-socials {
+      text-align: center;
+      margin-top: 10px;
+
+      .social-link {
+        text-decoration: none;
+        opacity: .65;
+        display: inline-block;
+        @include transition(opacity, .2s, linear);
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+      .social-icon {
+        display: block;
+      }
+    }
+
+    .client-name {
+      font-size: 25px;
+      color: #279c6f;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .company-name {
+      font-size: 20px;
+      color: #5e5e5e;
+      font-family: $light;
+      margin-top: 8px;
     }
   }
 }
