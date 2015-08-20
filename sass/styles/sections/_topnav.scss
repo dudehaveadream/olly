@@ -1,8 +1,12 @@
 .top-nav {
 	height: 53px;
+	width: 100%;
 	background-image: url(../img/bg/topnav.jpg);
 	background-size: cover;
-	position: relative;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 20;
 	&:before {
 		content: '';
 		position: absolute;
@@ -30,6 +34,20 @@
 					margin-right: 5px;
 					margin-top: -3px;
 				}
+			}
+		}
+	}
+	@media #{$mobile} {
+		position: static;
+		height: auto;
+		&-list {
+			height: auto;
+			padding-bottom: 8px;
+			text-align: center;
+			li {
+				margin-bottom: 10px;
+				width: 100%;
+				margin-left: 0;
 			}
 		}
 	}

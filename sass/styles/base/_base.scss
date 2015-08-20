@@ -46,6 +46,10 @@
 body {
 	font-family: $light;
   	font-size: 17px;
+    padding-top: 53px;
+    @media #{$mobile} {
+        padding-top: 0;
+    }
 }
 
 h2 {
@@ -101,6 +105,23 @@ h2 {
             width: 50px;
             right: 0;
             padding: 13px 0 10px;
+        }
+    }
+    @media #{$mobile} {
+        width: 100%;
+        height: 100px;
+        input[type="text"] {
+            padding: 0 15px;
+        }
+        .btn {
+            top: 50px;
+            &.btn-light-green {
+                right: 100px;
+                width: calc(100% - 100px);
+            }
+            &.btn-dark-green {
+                width: 100px;
+            }
         }
     }
 }

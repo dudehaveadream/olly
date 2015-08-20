@@ -119,5 +119,25 @@
 				}
 			}
 		}
+		@media #{$desktop} {
+			right: 155px;
+		}
+		@media #{$mobile} {
+			right: -20px;
+			@include transform (scale(0.8));
+			&:after {
+				content: none;
+			}
+		}
+	}
+	@media #{$mobile} {
+		overflow: hidden;
+		padding-bottom: 240px;
+		&-top {
+			.logo, .authorization {
+				float: none;
+				text-align: center;
+			}
+		}
 	}
 }
