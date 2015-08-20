@@ -3,12 +3,286 @@
 	background-image: url(../img/bg/howitworks.jpg);
 	background-repeat: repeat-y;
 	background-position: top center;
-	&-steps {
-		@include clearfix;
+	&-text {
+		.pointer {
+			position: absolute;
+		}
+		p {
+			font-size: 25px;
+			color: #2e2e2e;
+			&.text-footer {
+				font-size: 19px;
+				color: #545454;
+				border-top: 1px solid #d4d4d4;
+				margin-top: 15px;
+				padding-top: 15px;
+			}
+		}
 	}
 	&-image {
 		img {
 			max-width: 100%;
+		}
+	}
+	&-steps {
+		position: relative;
+		margin-top: 70px;
+		@include clearfix;
+		.btn-light-green {
+			padding: 8px;
+			margin-top: 15px;
+			font-family: $semibold;
+			font-size: 25px;
+			// border-bottom: 4px solid #23905e;
+			@include box-shadow (inset 0 -4px 0 #23905e);
+			@include border-radius (4px);
+		}
+		&.steps-left {
+			text-align: left;
+			.how-it-works-image {
+				text-align: right;
+			}
+		}
+		.steps-right-text {
+			float: right;
+		}
+		&.steps-right {
+			text-align: right;
+			.how-it-works-text {
+				margin-left: auto;
+			}
+			.how-it-works-image {
+				text-align: left;
+			}
+		}
+		&.step1 {
+			.how-it-works-text {
+				width: 420px;
+				padding-top: 175px;
+				.pointer {
+					top: 0;
+					right: -20px;
+				}
+			}
+		}
+		&.step2 {
+			.how-it-works-text {
+				width: 400px;
+				padding-top: 120px;
+				.pointer {
+					top: 170px;
+					left: -40px;
+				}
+			}
+		}
+		&.step3 {
+			.how-it-works-text {
+				width: 320px;
+				padding-top: 140px;
+				.pointer {
+					bottom: -80px;
+					right: -40px;
+				}
+			}
+		}
+		&.step4 {
+			.how-it-works-text {
+				width: 310px;
+				padding-top: 120px;
+				.pointer {
+					top: 150px;
+					left: -50px;
+				}
+			}
+		}
+		&.step5 {
+			.how-it-works-text {
+				width: 455px;
+				padding-top: 140px;
+				.pointer {
+					top: 60px;
+					right: -45px;
+				}
+			}
+		}
+		&.step6 {
+			.how-it-works-text {
+				width: 380px;
+				padding-top: 110px;
+				.pointer {
+					top: 120px;
+					left: -50px;
+				}
+			}
+		}
+		&.step7 {
+			.how-it-works-text {
+				width: 455px;
+				padding-top: 140px;
+				.pointer {
+					top: 80px;
+					right: -45px;
+				}
+			}
+		}
+		&.step8 {
+			.how-it-works-text {
+				width: 290px;
+				padding-top: 130px;
+				.pointer {
+					top: 110px;
+					left: -50px;
+				}
+			}
+		}
+	}
+	@media #{$desktop} {
+		&-steps {
+			&.step1 {
+				.how-it-works-text {
+					.pointer {
+						top: 15px;
+					}
+				}
+			}
+			&.step2 {
+				.how-it-works-text {
+					.pointer {
+						top: 180px;
+						left: -20px;
+					}
+				}
+			}
+			&.step4 {
+				.how-it-works-text {
+					.pointer {
+						left: -70px;
+					}
+				}
+			}
+			&.step5 {
+				.how-it-works-text {
+					.pointer {
+						top: 70px;
+						right: -130px;
+					}
+				}
+			}
+			&.step6 {
+				.how-it-works-text {
+					.pointer {
+						top: 50px;
+						left: -20px;
+					}
+				}
+			}
+			&.step7 {
+				.how-it-works-text {
+					.pointer {
+						right: -25px;
+					}
+				}
+			}
+			&.step8 {
+				.how-it-works-text {
+					.pointer {
+						left: -160px;
+					}
+				}
+			}
+		}
+	}
+	@media #{$tablet} {
+		.how-it-works-text {
+			width: 100% !important;
+		}
+		&-steps {
+			&.step1 {
+				.how-it-works-text {
+					padding-top: 100px;
+					.pointer {
+						top: -50px;
+					}
+				}
+			}
+			&.step2 {
+				.how-it-works-text {
+					padding-top: 80px;
+					.pointer {
+						top: 150px;
+					}
+				}
+			}
+			&.step3 {
+				.how-it-works-text {
+					padding-top: 80px;
+					.pointer {
+						top: 100px;
+					}
+				}
+			}
+			&.step4 {
+				.how-it-works-text {
+					padding-top: 80px;
+					.pointer {
+						top: 50px;
+						left: -200px;
+					}
+				}
+			}
+			&.step5 {
+				.how-it-works-text {
+					padding-top: 100px;
+					.pointer {
+						top: 40px;
+					}
+				}
+			}
+			&.step6 {
+				.how-it-works-text {
+					padding-top: 80px;
+					.pointer {
+						top: 30px;
+						left: -150px;
+					}
+				}
+			}
+			&.step7 {
+				.how-it-works-text {
+					padding-top: 90px;
+					.pointer {
+						top: 30px;
+					}
+				}
+			}
+			&.step8 {
+				.how-it-works-text {
+					padding-top: 90px;
+					text-align: center;
+					.pointer {
+						top: 20px;
+					}
+				}
+			}
+		}
+	}
+	@media #{$mobile} {
+		&-text {
+			padding: 0 !important;
+			text-align: center !important;
+			margin-bottom: 30px;
+			.pointer {
+				display: none;
+			}
+		}
+		&-image {
+			text-align: center !important;
+		}
+		&-steps {
+			margin-top: 40px;
+			.steps-right-text {
+				float: none;
+			}
 		}
 	}
 }
