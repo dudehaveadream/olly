@@ -102,6 +102,11 @@ h2 {
   margin-bottom: 15px;
   text-transform: uppercase;
 }
+@media only screen and (max-width: 639px) {
+  h2 {
+    font-size: 28px;
+  }
+}
 
 .title-holder {
   text-align: center;
@@ -418,6 +423,11 @@ h2 {
 .header-content h1.main-title:after {
   left: 50%;
   background: #3b4d59;
+}
+@media only screen and (max-width: 639px) {
+  .header-content h1.main-title {
+    font-size: 32px;
+  }
 }
 .header-content p.subtitle {
   padding: 0 10px;
@@ -974,4 +984,344 @@ h2 {
   color: #5e5e5e;
   font-family: "Aileron-Light";
   margin-top: 8px;
+}
+
+.count-section {
+  background: url(../img/bg/count-section.jpg);
+  background-position: center 0;
+  padding: 75px 0;
+  text-align: center;
+  position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover;
+}
+.count-section:after {
+  content: '';
+  width: 35px;
+  height: 21px;
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  margin-left: -17px;
+  background: url(../img/icons/count-section_arrow.png) no-repeat;
+}
+.count-section .title-holder {
+  color: #fff;
+}
+.count-section .title-holder .subtitle {
+  margin-top: 12px;
+  font-family: "Aileron-Light";
+  padding-bottom: 10px;
+  line-height: 1.2;
+}
+@media only screen and (max-width: 639px) {
+  .count-section .title-holder .subtitle {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .count-section .count-media {
+    width: 33.3333333333%;
+    float: left;
+  }
+}
+@media only screen and (max-width: 639px) {
+  .count-section .count-media {
+    width: 49%;
+    vertical-align: top;
+    float: none;
+    display: inline-block;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .count-section .count-media {
+    width: 100%;
+  }
+}
+.count-section .count {
+  font-size: 70px;
+  font-family: "Aileron-Light";
+  color: #fff;
+  line-height: 1.4;
+  display: inline-block;
+  border-bottom: 1px dashed #fff;
+  padding: 0 5px;
+  margin-top: 35px;
+}
+@media only screen and (max-width: 991px) {
+  .count-section .count {
+    font-size: 44px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .count-section .count {
+    margin-top: 10px;
+  }
+}
+.count-section .count.count-top {
+  margin-top: 13px;
+  font-size: 100px;
+  line-height: 1.2;
+}
+@media only screen and (max-width: 991px) {
+  .count-section .count.count-top {
+    font-size: 70px;
+  }
+}
+.count-section .count-opt {
+  font-size: 20px;
+  font-family: "Aileron-Light";
+  margin-top: 16px;
+  color: #fff;
+  line-height: 1.2;
+}
+@media only screen and (max-width: 639px) {
+  .count-section .count-opt {
+    font-size: 18px;
+  }
+}
+
+.pricing-plans {
+  padding: 90px 0 100px;
+}
+@media only screen and (max-width: 639px) {
+  .pricing-plans {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .pricing-plans .container {
+    padding: 0;
+    overflow-x: scroll;
+  }
+}
+.pricing-plans .pricing-table {
+  width: 100%;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: url(../img/bg/table-bg.png);
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover;
+}
+@media only screen and (max-width: 639px) {
+  .pricing-plans .pricing-table {
+    width: 610px;
+  }
+}
+.pricing-plans th {
+  text-transform: uppercase;
+  text-align: center;
+  height: 80px;
+  vertical-align: middle;
+  line-height: 1.2;
+  font-size: 24px;
+}
+.pricing-plans th span:after {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 4px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  background: #ffffff;
+  margin: 5px auto -10px;
+}
+@media only screen and (max-width: 991px) {
+  .pricing-plans th {
+    font-size: 18px;
+    height: auto;
+    padding: 20px 0;
+  }
+}
+.pricing-plans .plans {
+  background: #fff;
+  font-size: 32px;
+  font-family: "Aileron-Semibold";
+  color: #282828;
+  text-align: left;
+  width: 430px;
+  padding-left: 20px;
+}
+@media only screen and (max-width: 1199px) {
+  .pricing-plans .plans {
+    width: 330px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .pricing-plans .plans {
+    width: 200px;
+    font-size: 24px;
+    padding: 0 10px;
+  }
+}
+.pricing-plans .free {
+  background: #bab9b9;
+  font-family: "Aileron-Bold";
+  color: #ffffff;
+  width: 190px;
+  -webkit-border-radius: 5px 0 0 0;
+  -moz-border-radius: 5px 0 0 0;
+  -ms-border-radius: 5px 0 0 0;
+  border-radius: 5px 0 0 0;
+}
+@media only screen and (max-width: 1199px) {
+  .pricing-plans .free {
+    width: 150px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .pricing-plans .free {
+    width: auto;
+  }
+}
+.pricing-plans .premium {
+  background: #e5b444;
+  font-family: "Aileron-Bold";
+  color: #ffffff;
+}
+.pricing-plans .concierge {
+  background: #3dad82;
+  font-family: "Aileron-Bold";
+  color: #ffffff;
+  -webkit-border-radius: 0 5px 0 0;
+  -moz-border-radius: 0 5px 0 0;
+  -ms-border-radius: 0 5px 0 0;
+  border-radius: 0 5px 0 0;
+}
+.pricing-plans tbody {
+  -webkit-border-radius: 8px 0 0 0;
+  -moz-border-radius: 8px 0 0 0;
+  -ms-border-radius: 8px 0 0 0;
+  border-radius: 8px 0 0 0;
+  border: 1px solid #d6d7d7;
+  border-bottom: none;
+}
+.pricing-plans tbody td {
+  font-size: 24px;
+  vertical-align: middle;
+  padding-left: 20px;
+  color: #484848;
+  padding: 13px 20px;
+  border-right: 1px dashed #d6d7d7;
+  border-bottom: 1px dashed #acacac;
+  line-height: 1.2;
+}
+@media only screen and (max-width: 991px) {
+  .pricing-plans tbody td {
+    font-size: 18px;
+    padding: 10px;
+  }
+}
+.pricing-plans tbody td:last-of-type {
+  border-right: 3px solid #d6d7d7;
+}
+.pricing-plans tbody td .egg {
+  width: 21px;
+  height: 31px;
+  display: block;
+  margin: 0 auto;
+  background: url(../img/icons/egg-icon.png);
+  background-repeat: no-repeat;
+}
+.pricing-plans tbody td .egg.active {
+  background-position: -21px 0;
+}
+.pricing-plans tbody td .info {
+  display: inline-block;
+  margin-left: 8px;
+  cursor: pointer;
+}
+.pricing-plans tbody td .info img {
+  display: block;
+}
+.pricing-plans tfoot td {
+  background: #ecf1f2;
+  border-right: 1px dashed #d6d7d7;
+  color: #292929;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1.2;
+  padding: 21px 0;
+  border-bottom: 2px solid #d6d7d7;
+}
+@media only screen and (max-width: 991px) {
+  .pricing-plans tfoot td {
+    padding: 12px 0;
+  }
+}
+.pricing-plans tfoot td:first-of-type {
+  border-left: 2px solid #d6d7d7;
+}
+.pricing-plans tfoot td:last-of-type {
+  border-right: 2px solid #d6d7d7;
+}
+.pricing-plans tfoot td .price {
+  font-size: 28px;
+}
+@media only screen and (max-width: 991px) {
+  .pricing-plans tfoot td .price {
+    font-size: 20px;
+  }
+}
+.pricing-plans tfoot td .text {
+  font-size: 18px;
+}
+.pricing-plans tfoot td .text:after {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 4px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  margin: 15px auto 0;
+}
+@media only screen and (max-width: 991px) {
+  .pricing-plans tfoot td .text:after {
+    margin-top: 7px;
+  }
+}
+.pricing-plans tfoot td .text.text-free:after {
+  background: #bcbcbc;
+}
+.pricing-plans tfoot td .text.text-premium:after {
+  background: #e5b444;
+}
+.pricing-plans tfoot td .text.text-concierge:after {
+  background: #3dad82;
+}
+@media only screen and (max-width: 991px) {
+  .pricing-plans tfoot td .text {
+    font-size: 16px;
+  }
+}
+.pricing-plans tfoot td .price-group {
+  display: inline-block;
+}
+.pricing-plans tfoot td .price-group:first-of-type {
+  padding-right: 20px;
+  border-right: 1px solid #c5c5c5;
+}
+@media only screen and (max-width: 991px) {
+  .pricing-plans tfoot td .price-group:first-of-type {
+    padding-right: 10px;
+  }
+}
+.pricing-plans tfoot td .price-group:last-of-type {
+  padding-left: 20px;
+}
+@media only screen and (max-width: 991px) {
+  .pricing-plans tfoot td .price-group:last-of-type {
+    padding-left: 10px;
+  }
 }

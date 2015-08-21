@@ -57,6 +57,10 @@ h2 {
     font-family: $semibold;
     margin-bottom: 15px;
     text-transform: uppercase;
+
+    @media #{$mobile640} {
+        font-size: 28px;
+    }
 }
 
 .title-holder {

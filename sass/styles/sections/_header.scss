@@ -69,7 +69,11 @@
 			&:after {
 				left: 50%;
 				background: #3b4d59;
-			}			
+			}
+
+			@media #{$mobile640} {
+				font-size: 32px;
+			}
 		}
 		p.subtitle {
 			padding: 0 10px;
