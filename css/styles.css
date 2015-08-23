@@ -58,6 +58,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /*Mixins*/
 @font-face {
+  font-family: 'Socialico';
+  src: url("../fonts/Socialico.eot");
+  src: url("../fonts/Socialico.eot?#iefix") format("embedded-opentype"), url("../fonts/Socialico.woff") format("woff"), url("../fonts/Socialico.ttf") format("truetype"), url("../fonts/Socialico.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: 'Aileron-Light';
   src: url("../fonts/Aileron-Light.eot");
   src: url("../fonts/Aileron-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Aileron-Light.woff") format("woff"), url("../fonts/Aileron-Light.ttf") format("truetype"), url("../fonts/Aileron-Light.otf") format("opentype");
@@ -958,6 +965,9 @@ h2 {
   margin-top: 10px;
 }
 .clients-comments .carousel .client-socials .social-link {
+  font-family: 'Socialico';
+  font-size: 25px;
+  color: #43b187;
   text-decoration: none;
   opacity: .65;
   display: inline-block;

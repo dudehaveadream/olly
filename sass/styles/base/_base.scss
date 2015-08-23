@@ -1,4 +1,15 @@
 @font-face {
+    font-family: 'Socialico';
+    src: url('../fonts/Socialico.eot');
+    src: url('../fonts/Socialico.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Socialico.woff') format('woff'),
+         url('../fonts/Socialico.ttf') format('truetype'),
+         url('../fonts/Socialico.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Aileron-Light';
     src: url('../fonts/Aileron-Light.eot');
     src: url('../fonts/Aileron-Light.eot?#iefix') format('embedded-opentype'),
@@ -41,7 +52,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
 
 body {
 	font-family: $light;
