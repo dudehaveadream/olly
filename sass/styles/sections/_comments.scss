@@ -1,7 +1,16 @@
 .clients-comments {
   background: #f4f4f4;
   padding: 65px 0;
-
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 6px;
+    width: 100%;
+    background: $white;
+  }
   .carousel {
     text-align: center;
 
@@ -46,8 +55,11 @@
       }
 
       &.left {
-        margin-left: -21px;
+        margin-left: -20px;
 
+        @media #{$desktop} {
+          margin-left: -14px;
+        }
         @media #{$mobile} {
           margin-left: 0;
         }
@@ -58,8 +70,11 @@
       }
 
       &.right {
-        margin-right: -21px;
+        margin-right: -20px;
 
+        @media #{$desktop} {
+          margin-right: -14px;
+        }
         @media #{$mobile} {
           margin-right: 0;
         }

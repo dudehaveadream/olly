@@ -17,8 +17,41 @@
 		&.icon-price {
 			background-position: 0 -60px;
 		}
-		&.icon-contacts {
+		&.icon-list {
 			background-position: 0 -80px;
+		}
+	}
+	&.icon-footer-nav {
+		width: 22px;
+		height: 18px;
+		background-image: url(../img/icons/footernav.png);
+		&.icon-home {
+			background-position: 0 0;
+		}
+		&.icon-light {
+			height: 21px;
+			background-position: 0 -18px;
+		}
+		&.icon-star {
+			background-position: 0 -39px;
+		}
+		&.icon-stat {
+			background-position: 0 -57px;
+		}
+		&.icon-price {
+			background-position: 0 -75px;
+		}
+		&.icon-list {
+			background-position: 0 -93px;
+		}
+		&.icon-signin {
+			background-position: 0 -111px;
+		}
+		&.icon-signup {
+			background-position: 0 -129px;
+		}
+		&.icon-contactus {
+			background-position: 0 -147px;
 		}
 	}
 }
