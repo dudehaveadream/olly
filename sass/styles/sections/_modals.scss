@@ -45,11 +45,20 @@
 		}
 	}
 	@media #{$mobile} {
+		h1 {
+			font-size: 28px;
+		}
 		&-dialog {
 			width: 100%;
 		}
 		&-body {
-			padding: 10px;
+			padding: 15px;
+			input[type=text] {
+				width: 100%;
+			}
+		}
+		&-hand {
+			display: none;
 		}
 	}
 }
