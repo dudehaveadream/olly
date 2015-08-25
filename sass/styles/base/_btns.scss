@@ -35,4 +35,14 @@
 			background: rgba(255,255,255,.1);
 		}
 	}
+	&.btn-red {
+		padding: 3px;
+		background: #c8436f;
+		font-size: 22px;
+		color: $white;
+		&:hover {
+			background: #bc3c67;
+			color: $white;
+		}
+	}
 }

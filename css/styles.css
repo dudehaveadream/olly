@@ -115,6 +115,10 @@ h2 {
   }
 }
 
+a:focus {
+  outline: none;
+}
+
 .title-holder {
   text-align: center;
   position: relative;
@@ -324,6 +328,16 @@ h2 {
 }
 .btn.btn-transp:hover {
   background: rgba(255, 255, 255, 0.1);
+}
+.btn.btn-red {
+  padding: 3px;
+  background: #c8436f;
+  font-size: 22px;
+  color: #ffffff;
+}
+.btn.btn-red:hover {
+  background: #bc3c67;
+  color: #ffffff;
 }
 
 /* Layout related stylesheets* */
@@ -1559,4 +1573,61 @@ h2 {
 }
 .footer-bottom-inner p.developer {
   float: right;
+}
+
+.modal h1 {
+  font-family: "Aileron-Bold";
+  font-size: 36px;
+  color: #2a2a2a;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  line-height: 1.2;
+  border-bottom: 1px solid #d6d7d7;
+}
+.modal p {
+  font-size: 19px;
+  color: #1d1d1d;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+.modal-dialog {
+  width: 540px;
+  margin: 90px auto 0;
+}
+.modal-body {
+  padding: 50px 140px 40px 30px;
+}
+.modal-body .btn-red {
+  width: 212px;
+}
+.modal-body input[type=text] {
+  width: 330px;
+  padding: 5px 10px;
+  font-size: 20px;
+  color: #b8adad;
+  border: 1px solid #b9b9b9;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+}
+.modal-footer {
+  background: #e0e0e0;
+  border-top: none;
+}
+.modal-hand {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+}
+.modal-hand img {
+  margin-bottom: -3px;
+}
+@media only screen and (max-width: 767px) {
+  .modal-dialog {
+    width: 100%;
+  }
+  .modal-body {
+    padding: 10px;
+  }
 }
